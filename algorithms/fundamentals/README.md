@@ -9,5 +9,5 @@ It steps through each space in the structure and compares the elements there wit
 ### Binary Search
 Don't think much, reduce the search space of the array by half at each time
 a search comparison is made,that is all, you've made yourself the binary search algorithm.  
-The binary search algorithm is an efficient search yet simple to implement.  
+The binary search algorithm is efficient and effective yet simple to implement.  
 **Big OH: Log(N)** 
