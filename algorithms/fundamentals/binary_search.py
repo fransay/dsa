@@ -6,13 +6,20 @@ an array/list using the binary search algorithm.
 """
 
 
-# TIME AND SPACE COMPLEXITY
-# Big Oh: log(N)
+"""
+ALGORITHMS EXPALINED
+* Given an array of n size and a target which represents a search element.
+* A loop is set with a condition which breaks when the index of the first element
+* is greater than or equal to the index of the last element.
+* At each iteration, the array search space is divided into two with a if condition
+* the algorithm returns a boolean and index value of the search result.
+"""
 
 def binary_search(array, target):
     """
     returns the a boolean representation and index values of target value 
     in a given array.
+    Big Oh: Log(N)
     """
     low_index, high_index = 0, len(array) - 1
     while low_index <= high_index:
