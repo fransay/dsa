@@ -6,8 +6,6 @@ Linear search also termed as a sequential search is a relatively simple search a
 It steps through each space in the structure and compares the elements there with the desired search target.  
 **Big OH: O(N)**  
 
-![seqsearch][https://www.simplilearn.com/ice9/free_resources_article_thumb/Linear-Search-Algorithm-Soni/example-of-linear-search-algorithm1.png]
-
 ### Binary Search
 Don't think much, reduce the search space of the array by half at each time
 a search comparison is made,that is all, you've made yourself the binary search algorithm.  
