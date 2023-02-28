@@ -6,7 +6,7 @@ Linear search also termed as a sequential search is a relatively simple search a
 It steps through each space in the structure and compares the elements there with the desired search target.  
 **Big OH: O(N)**  
 -- TODO: include a linear search figure.
-# Sentinel Linear Search
+### Sentinel Linear Search
 
 ### Binary Search
 Don't think much, reduce the search space of the array by half at each time
