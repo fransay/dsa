@@ -4,14 +4,15 @@ difficulty. Please note, this label is entirely subjective and must not be treat
 ### Linear Search
 Linear search also termed as a sequential search is a relatively simple search algorithm that traverses through a collection/data structure.  
 It steps through each space in the structure and compares the elements there with the desired search target.  
-**Big OH: O(N)**  
--- TODO: include a linear search figure.
+**Big OH: O(N)**    
+![lsa][https://www.simplilearn.com/ice9/free_resources_article_thumb/Linear-Search-Algorithm-Soni/example-of-linear-search-algorithm1.png]  
 ### Sentinel Linear Search
+
 
 ### Binary Search
 Don't think much, reduce the search space of the array by half at each time
 a search comparison is made,that is all, you've made yourself the binary search algorithm.  
 The binary search algorithm is efficient and effective yet simple to implement.  
-**Big OH: Log(N)** 
+**Big OH: Log(N)**   
 -- TODO: include binary search figure.
 
