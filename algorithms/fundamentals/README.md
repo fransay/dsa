@@ -10,7 +10,7 @@ COMPLEXITY: O(N)
 Sentinel linear is a variant of linear search where the number of comparison in reduced compared to 
 traditional linear search. The basic idea behind this algorithm is to add a sentinel to the end of 
 the array which is equal to the target value we are looking for.This helps to avoid checking the array
-boundary condition during each iteration of the loop, as the sentinel acts as the stopper for the loop
+boundary condition during each iteration of the loop, as the sentinel acts as the stopper for the loop.  
 COMPLEXITY: O(N)
 ### Binary Search
 Don't think much, reduce the search space of the array by half at each time
