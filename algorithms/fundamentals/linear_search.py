@@ -39,6 +39,7 @@ def linear_search_float(array, target_element: float):
     """
     **edge case**
     this implementation handles the edge case described on line 20 - 26
+    Big oh: O(N)
     """
     for index, element in enumerate(array):
         if abs(element - target_element) < 1e-9:  # determines the absolute difference between the
@@ -52,7 +53,8 @@ def linear_search_float(array, target_element: float):
 
 def linear_search_upgrade(array, target_element):
     """
-    returns a boolean representation and index of search element
+    returns a boolean representation and index of search element.
+    Big Oh: O(N)
     """
     for index, element in enumerate(array):
         if isclose(element, target_element):
