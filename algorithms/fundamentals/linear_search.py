@@ -2,7 +2,7 @@
 # DATE: 23/02/23
 # DESCRIPTION: This program searches for an element in a sequential data structure such as an array/list.
 
-
+from math import isclose
 """
 ALGORITHM EXPLAINED:
 * Given an array or a collection data structure
@@ -48,9 +48,22 @@ def linear_search_float(array, target_element: float):
         return False, None
 
 
+# deploying isClose() from python Standard library to making linear search much better
+
+def linear_search_upgrade(array, target_element):
+    """
+    returns a boolean representation and index of search element
+    """
+    for index, element in enumerate(array):
+        if isclose(element, target_element):
+            return True, index
+    return False, None
+
+
 # namespace referenced to main: program entry
 if __name__ == '__main__':
     print(linear_search([1, 2, 3, 4, 5, 6, 7], 2))
     print(linear_search(["male", "female"], "male"))
     print(linear_search(["male", "female"], "female"))
     print(linear_search([100, 34.45, 3.00], 3))
+    print(linear_search_upgrade([1, 2, 3, 4, 5, 6, 7], 2))
