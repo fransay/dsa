@@ -4,7 +4,8 @@ difficulty. Please note, this label is entirely subjective and must not be treat
 ### Linear Search
 Linear search also termed as a sequential search is a relatively simple search algorithm that traverses through a collection/data structure.  
 It steps through each space in the structure and compares the elements there with the desired search target.  
-**Big OH: O(N)**    
+**Big OH: O(N)**
+![ls_img](https://cdn.programiz.com/sites/tutorial2program/files/linear-search-found.png)
 ### Sentinel Linear Search
 
 
