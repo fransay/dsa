@@ -18,13 +18,12 @@ this is as a result of the internal rounding precision of the floating point num
 In such an instance, the algorithm designed below won't be effective and efficient.
 We must take care of this edge case.
 ... see function **linear_search_float**
-
 """
 
 
 def linear_search(array, target_element):
     """
-    This function accepts two parameters, array and target_element arguments
+    Accepts two parameters, array and target_element arguments
     returns a boolean and position(index) of the target element in the array/list.
     Big Oh: O(N)
     """
