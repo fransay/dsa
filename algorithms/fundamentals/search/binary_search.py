@@ -1,23 +1,25 @@
-"""
-AUTHOR: Francis Osei Annin
-DATE: 23/02/23
-DESCRIPTION: This program searches for an element in a sequential data structure such 
-an array/list using the binary search algorithm.
-"""
+# AUTHOR: Francis Osei Annin
+# DATE: 23/02/23
+# DESCRIPTION: This program searches for an element in a sequential data structure such
+# an array/list using the binary search algorithm.
 
 """
 ALGORITHMS EXPLAINED
 * Given an array of n size and a target which represents a search element.
 * A loop is set with a condition which breaks when the index of the first element
 * is greater than or equal to the index of the last element.
-* At each iteration, the array search space is divided into two with a if condition
+* At each iteration, the array search space is divided into two with if condition
 * the algorithm returns a boolean and index value of the search result.
+
+EDGE CASE
+* floating point comparison must be taken care. See linear_search.py script for
+extended information on handling floating point comparison.
 """
 
 
 def binary_search(array, target):
     """
-    returns the a boolean representation and index values of target value 
+    returns the boolean representation and index values of target value
     in a given array.
     Big Oh: Log(N)
     """
