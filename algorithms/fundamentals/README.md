@@ -11,8 +11,7 @@ a systematic order. There are a handful basic search algorithm established in co
 in under this section. :hamster:
 #### Linear Search
 Linear search also termed as a sequential search is a relatively simple search algorithm that traverses through a 
-collection/data structure.  
-It steps through each space in the structure and compares the elements there with the desired search target.  
+collection/data structure.It steps through each space in the structure and compares the elements there with the desired search target.  
 **BIG O: O(N)**  
 
 #### Sentinel Linear Search
