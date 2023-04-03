@@ -5,10 +5,10 @@ Time and space complexity are quantified using the **Big Oh Notation**, this qua
 estimate the cost of their program runtime at the backdrop of available computing resources.
 The notation has origin from the discipline of mathematics.
 ## Search
-Search for items in a defined space has existed pre-stone age, objects and data representations defined in collections
-in computer science are not new this concept. The conventional data structures allows the freedom to look for data in 
-a systematic order. There are a handful basic search algorithm established in computer science, and we are going to treat
-in under this section. :hamster:
+Searching for items in a defined space has existed pre-stone age, objects and data representations defined in collections
+in computer science are not new to this concept. The conventional data structures allows the freedom to look for data in 
+a systematic order. There are a handful basic search algorithm established in computer science, and we are going to implement
+a couple of them under this section. :hamster:
 #### Linear Search
 Linear search also termed as a sequential search is a relatively simple search algorithm that traverses through a 
 collection/data structure.It steps through each space in the structure and compares the elements there with the desired search target.  
