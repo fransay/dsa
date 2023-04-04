@@ -29,7 +29,7 @@ The binary search algorithm is efficient and effective yet simple to implement.
 
 ## Sort
 #### Bubble Sort
-
+Bubble sort 
 #### Insertion Sort
 #### Merge Sort
 #### Quick Sort
