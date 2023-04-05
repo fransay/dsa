@@ -28,6 +28,9 @@ The binary search algorithm is efficient and effective yet simple to implement.
 **BIG O: Log(N)**  
 
 ## Sort
+Ordering is extremely essential in the organisation of data objects in data structures.
+Sort algorithms enables programmers to seamlessly and efficiently order objects in a defined
+order,e.g. [2,4,1,5] after a sort algorithm applied shall result in [1,2,4,5].
 #### Bubble Sort
 Bubble sort 
 #### Insertion Sort
