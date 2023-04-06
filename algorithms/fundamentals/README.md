@@ -32,7 +32,9 @@ Ordering is extremely essential in the organisation of data objects in data stru
 Sort algorithms enables programmers to seamlessly and efficiently order objects in a defined
 order,e.g. [2,4,1,5] after a sort algorithm applied shall result in [1,2,4,5].
 #### Bubble Sort
-Bubble sort 
+Bubble sort is the simplest sorting algorithm that works repeatedly by swapping the 
+adjacent elements if they are wrong order. The algorithm doesn't work for large numbers.  
+
 #### Insertion Sort
 #### Merge Sort
 #### Quick Sort
