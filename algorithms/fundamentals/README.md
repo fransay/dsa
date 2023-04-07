@@ -36,6 +36,9 @@ Bubble sort is the simplest sorting algorithm that works repeatedly by swapping 
 adjacent elements if they are wrong order. The algorithm doesn't work for large numbers.  
 
 #### Insertion Sort
+Insertion sort works much more intuitively, the collection structure is divided into a sorted and
+unsorted collection struct, items in the unsorted at each iteration are moved and place in their 
+right order of position in the unsorted collection struct.
 #### Merge Sort
 #### Quick Sort
 #### Selection Sort
