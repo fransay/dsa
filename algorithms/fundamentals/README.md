@@ -40,5 +40,6 @@ Insertion sort works much more intuitively, the collection structure is divided 
 unsorted collection struct, items in the unsorted at each iteration are moved and place in their 
 right order of position in the unsorted collection struct.
 #### Merge Sort
+Merge
 #### Quick Sort
 #### Selection Sort
