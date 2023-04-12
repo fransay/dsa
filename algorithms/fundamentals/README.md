@@ -1,7 +1,7 @@
 # Fundamental Algorithms
 Algorithms treated under this section are classified as "fundamental" based on the level of implementation 
 difficulty. Please note, this label is entirely subjective and must not be treated as a generic convention. 
-Time and space complexity are quantified using the **Big Oh Notation**, this quantity enables the programmer 
+Time and space complexity are expressed through the use of **Big Oh Notation**, this quantity enables the programmer 
 estimate the cost of their program runtime at the backdrop of available computing resources.
 The notation has origin from the discipline of mathematics.
 ## Search
@@ -42,4 +42,5 @@ right order of position in the unsorted collection struct.
 #### Merge Sort
 Merge sort is a sorting 
 #### Quick Sort
+
 #### Selection Sort
