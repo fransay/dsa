@@ -6,4 +6,4 @@
 # single linked list
 # double linked list
 # circular linked list
-
+# A linked list can be said to be a dynamic data structure
