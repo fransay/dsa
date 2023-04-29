@@ -1,7 +1,6 @@
 # AUTHOR: Francis Osei Annin
 # DATE: 17/02/23
-# DESCRIPTION: This program linearly searches for desired elements in a collection data structure,
-# using the sentinel approach.
+# DESCRIPTION: Sentinel Linear Search
 
 
 """

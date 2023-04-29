@@ -1,6 +1,6 @@
 # AUTHOR: Francis Osei Annin
 # DATE: 18/03/23
-# DESCRIPTION: This program creates a type for linkedlist with relevant methods.
+# DESCRIPTION: Linked List
 # HISTORY: Invented by Allen Newell, Cliff Shaw and Herbert A. Simon in 1955-1956
 
 class Node(object):
@@ -14,6 +14,7 @@ class Node(object):
 
     def get_node_pointer(self):
         """return node pointer"""
+        return self._pointer
 
     def set_node_value(self, new_node_value):
         """set a new node value"""
