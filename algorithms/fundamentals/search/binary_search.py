@@ -1,7 +1,7 @@
-# AUTHOR: Francis Osei Annin
-# DATE: 23/02/23
-# DESCRIPTION: Binary Search
-# HISTORY: Invented by A.K Chandra in 1971 at Standford
+# Author: Francis Osei Annin
+# Date: 23/02/23
+# Description: Binary Search
+# History: Invented by A.K Chandra in 1971 at Standford
 
 """
 ALGORITHMS EXPLAINED
@@ -21,7 +21,7 @@ def binary_search(array, target):
     """
     returns the boolean representation and index values of target value
     in a given array.
-    Big Oh: Log(N)
+    Big Oh: log(N)
     """
     low_index, high_index = 0, len(array) - 1
     while low_index <= high_index:

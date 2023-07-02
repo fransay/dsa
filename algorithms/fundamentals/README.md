@@ -42,5 +42,5 @@ right order of position in the unsorted collection struct.
 #### Merge Sort
 Merge sort is a sorting 
 #### Quick Sort
-
+Quick sort
 #### Selection Sort
