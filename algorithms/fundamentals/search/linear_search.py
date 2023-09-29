@@ -3,21 +3,21 @@
 # DESCRIPTION: Linear Search
 
 from math import isclose
-"""
-ALGORITHM EXPLAINED:
-* Given an array or a collection data structure
-* The algorithm walks through each item in the structure
-* it checks each element and compares it to the desired/target element.
-* if found, it breaks and return a boolean 
-* with the position of the element in the array
 
-EDGE CASES:
-This naive implementation doesn't really work well for all data types.
-For example, a floating point number comparison of (0.5 + 0.1 != 0.6),
-this is as a result of the internal rounding precision of the floating point number. 
-In such an instance, the algorithm designed below won't be effective and efficient.
-We must take care of this edge case.
-... see function **linear_search_float**
+
+"""
+<Linear Search Algorithm Explanation> 
+- Given a collection data structure, eg list, set, tuple etc.
+- The algorithm walks through each item in the structure
+- it checks each element in the data structure and compares it to the desired/target element.
+- if found, it breaks and return a boolean and the position of the element in the structure.
+
+<Edge Case>
+- This naive implementation doesn't really work well for all data types.
+- For example, a floating point number comparison of (0.5 + 0.1 != 0.6),
+- this is as a result of the internal rounding precision of the floating point number. 
+- In such an instance, the algorithm designed below won't be effective and efficient.
+- see function **linear_search_float()**
 """
 
 

@@ -3,6 +3,8 @@
 # DESCRIPTION: Sentinel Linear Search
 
 
+# TODO: Refactor algorithm documentation
+
 """
 ALGORITHM EXPLAINED
 * Given an array of size n and a target which defines a search element
@@ -45,4 +47,6 @@ if __name__ == '__main__':
     print(sentinel_linear_search([11, 12, 14, 15], 4, 12))
     print(sentinel_linear_search([11, 21, 41, 51], 4, 41))
     print(sentinel_linear_search([111, 211, 411, 511], 4, 511))
+    print(sentinel_linear_search([1110, 2011, 4101, 5101], 4, 5101))
+
 

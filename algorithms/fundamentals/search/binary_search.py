@@ -3,6 +3,8 @@
 # Description: Binary Search
 # History: Invented by A.K Chandra in 1971 at Standford
 
+
+# TODO: Refactor how the algorithm is broken down and explained in a very entertaining way.
 """
 ALGORITHMS EXPLAINED
 * Given an array of n size and a target which represents a search element.

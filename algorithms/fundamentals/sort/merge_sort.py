@@ -8,9 +8,7 @@ ALGORITHM EXPLAINED
 
 
 def merge_sort():
-    """
-    returns a sorted collection of elements
-    """
+    """returns a sorted collection of elements"""
     pass
 
 

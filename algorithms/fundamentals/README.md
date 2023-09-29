@@ -31,6 +31,7 @@ The binary search algorithm is efficient and effective yet simple to implement.
 Ordering is extremely essential in the organisation of data objects in data structures.
 Sort algorithms enables programmers to seamlessly and efficiently order objects in a defined
 order,e.g. [2,4,1,5] after a sort algorithm applied shall result in [1,2,4,5].
+
 #### Bubble Sort
 Bubble sort is the simplest sorting algorithm that works repeatedly by swapping the 
 adjacent elements if they are wrong order. The algorithm doesn't work for large numbers.  
@@ -39,8 +40,11 @@ adjacent elements if they are wrong order. The algorithm doesn't work for large 
 Insertion sort works much more intuitively, the collection structure is divided into a sorted and
 unsorted collection struct, items in the unsorted at each iteration are moved and place in their 
 right order of position in the unsorted collection struct.
+
 #### Merge Sort
-Merge sort is a sorting 
+Merge sort works well by dividing an array into smaller arrays and sorting all the smaller subarrays and merging  
+back the sorted arrays to form a final sorted array.  
+
 #### Quick Sort
 Quick sort
 #### Selection Sort
