@@ -4,7 +4,7 @@ difficulty. Please note, this label is entirely subjective and must not be treat
 Time and space complexity are expressed through the use of **Big Oh Notation**, this quantity enables the programmer 
 estimate the cost of their program runtime at the backdrop of available computing resources.
 The notation has origin from the discipline of mathematics.
-## Search
+## Search :mag_right:
 Searching for items in a defined space has existed pre-stone age, objects and data representations defined in collections
 in computer science are not new to this concept. The conventional data structures allows the freedom to look for data in 
 a systematic order. There are a handful basic search algorithm established in computer science, and we are going to implement
