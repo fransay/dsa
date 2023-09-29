@@ -18,6 +18,10 @@ from math import isclose
 - this is as a result of the internal rounding precision of the floating point number. 
 - In such an instance, the algorithm designed below won't be effective and efficient.
 - see function **linear_search_float()**
+
+<Extra Info>
+- Linear search is one of the few fundamental search algorithm
+- Implementation Difficulty: Easy
 """
 
 
@@ -53,6 +57,7 @@ def linear_search_float(array, target_element: float):
 def linear_search_upgrade(array, target_element):
     """
     returns a boolean representation and index of search element.
+    linear_search_upgrade takes care of all numerical data types (int, float)
     Big Oh: O(N)
     """
     for index, element in enumerate(array):
