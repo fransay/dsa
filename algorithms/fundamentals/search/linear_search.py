@@ -4,7 +4,6 @@
 
 from math import isclose
 
-
 """
 <Linear Search Algorithm Explanation> 
 - Given a collection data structure, eg list, set, tuple etc.
@@ -65,11 +64,14 @@ def linear_search_upgrade(array, target_element):
             return True, index
     return False, None
 
+# uncomment lines 71-76 in case you wish to run this as a script
+# either than that, all unit tests relating to linear search can
+# be found at algorithms/fundamentals/search/tests or a relative path
+# of ../test
 
-# namespace referenced to main: program entry
-if __name__ == '__main__':
-    print(linear_search([1, 2, 3, 4, 5, 6, 7], 2))
-    print(linear_search(["male", "female"], "male"))
-    print(linear_search(["male", "female"], "female"))
-    print(linear_search([100, 34.45, 3.00], 3))
-    print(linear_search_upgrade([1, 2, 3, 4, 5, 6, 7], 2))
+# if __name__ == '__main__':
+#     print(linear_search([1, 2, 3, 4, 5, 6, 7], 2))
+#     print(linear_search(["male", "female"], "male"))
+#     print(linear_search(["male", "female"], "mango"))
+#     print(linear_search([100, 34.45, 3.00], 3))
+#     print(linear_search_upgrade([1, 2, 3, 4, 5, 6, 7], 2))
