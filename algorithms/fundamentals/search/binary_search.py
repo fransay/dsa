@@ -4,26 +4,28 @@
 # History: Invented by A.K Chandra in 1971 at Standford
 
 
-# TODO: Refactor how the algorithm is broken down and explained in a very entertaining way.
 """
-ALGORITHMS EXPLAINED
-* Given an array of n size and a target which represents a search element.
-* A loop is set with a condition which breaks when the index of the first element
-* is greater than or equal to the index of the last element.
-* At each iteration, the array search space is divided into two with if condition
-* the algorithm returns a boolean and index value of the search result.
+<Binary Search Algorithm Explanation>
+- Given a collection data structure, e.g. list, set, tuples etc.
+- The BSA (Binary Search Algorithm) iteratively divides the search space into two.
+- And for each search space of the collection data structure, the value of the middle index is determined
+- In a case where the target value or element is equal to the middle index value of the search space, the iteration breaks.
+- The position and value of the middle value equal to the target element is returned.
 
-EDGE CASE
-* floating point comparison must be taken care. See linear_search.py script for
-extended information on handling floating point comparison.
+<Edge Case>
+- No peculiar edge case.
+- When comparing values between the target element those in the element search space,
+- Note floating point comparison should be treated with much care as can be seen in linear_search.py
+
+<Extra Info>
+- Kindly note this algorithm only works validly for sorted collection data structures.
 """
 
 
 def binary_search(array, target):
     """
-    returns the boolean representation and index values of target value
-    in a given array.
-    Big Oh: log(N)
+    returns the boolean and index representations of target value in a given array.
+    Big O: log(N)
     """
     low_index, high_index = 0, len(array) - 1
     while low_index <= high_index:
@@ -36,11 +38,14 @@ def binary_search(array, target):
             low_index = mid_index + 1
     return False, None
 
+# uncomment lines 46-51 in case you wish to run this as a script
+# either than that, all unit tests relating to linear search can
+# be found at algorithms/fundamentals/search/tests or a relative path
+# of ../test
 
-def main():
-    print(binary_search([1, 2, 3, 4, 5, 7], 7))
-    print(binary_search([7, 8, 9, 10, 11, 12], 10.00))
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     print(binary_search([1, 2, 3, 4, 5, 7], 7))
+#     print(binary_search([7, 8, 9, 10, 11, 12], 10.00))
+#
+# if __name__ == '__main__':
+#     main()
