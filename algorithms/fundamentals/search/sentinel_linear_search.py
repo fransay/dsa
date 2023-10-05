@@ -4,6 +4,8 @@
 
 
 # TODO: Refactor algorithm documentation
+# TODO: Do more refactoring and comprehension
+# TODO: Improve on the whole algorithm experience
 
 """
 ALGORITHM EXPLAINED
@@ -41,12 +43,15 @@ def sentinel_linear_search(array, n, key):
         return True, counter
     return False, None
 
-
-if __name__ == '__main__':
-    print(sentinel_linear_search([1, 2, 4, 5], 4, 2))
-    print(sentinel_linear_search([11, 12, 14, 15], 4, 12))
-    print(sentinel_linear_search([11, 21, 41, 51], 4, 41))
-    print(sentinel_linear_search([111, 211, 411, 511], 4, 511))
-    print(sentinel_linear_search([1110, 2011, 4101, 5101], 4, 5101))
+# uncomment lines 51-56 in case you wish to run this as a script
+# either than that, all unit tests relating to sentinel linear search can
+# be found at algorithms/fundamentals/search/tests or a relative path
+# of ../test
 
 
+# if __name__ == '__main__':
+#     print(sentinel_linear_search([1, 2, 4, 5], 4, 2))
+#     print(sentinel_linear_search([11, 12, 14, 15], 4, 12))
+#     print(sentinel_linear_search([11, 21, 41, 51], 4, 41))
+#     print(sentinel_linear_search([111, 211, 411, 511], 4, 511))
+#     print(sentinel_linear_search([1110, 2011, 4101, 5101], 4, 5101))
