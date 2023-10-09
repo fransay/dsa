@@ -67,7 +67,6 @@ class BinarySearchTree(object):
         """returns the node with the smallest key in BST"""
         current_value = self.root
 
-
     def get_maximum_key(self):
         """returns the node with the largest key in the BST"""
         pass
