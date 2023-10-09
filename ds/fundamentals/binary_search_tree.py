@@ -18,9 +18,10 @@
 
 class Node(object):
     """models a node in the tree"""
-    def __init__(self, value):
-        """every node has a value, a pointer to right sub node and pointer to the left sub node"""
-        self.value = value
+
+    def __init__(self, key):
+        """init node key and left and right child pointers"""
+        self.key = key
         self.right = None
         self.left = None
 
@@ -32,7 +33,53 @@ class BinarySearchTree(object):
     post-order traversal, range queries including minimum and maximum
     node retrieval.
     """
-    pass
+
+    def __init__(self):
+        """instantiate a new root node on object init"""
+        self.root = Node(None)
+
+    def search(self, target_key):
+        """search for target_key in BST"""
+        current_node = self.root
+        while current_node.key != target_key and current_node.key is not None:
+            if current_node.key == target_key:
+                return current_node.key, True
+            elif current_node > target_key:
+                current_node = current_node.left
+            else:
+                current_node = current_node.right
+        return current_node, False
+
+    def insert(self, key):
+        """insert node in BST"""
+        current_node = self.root
+        if current_node.key is None or current_node.key == key:
+            current_node = Node(key)
+            self.root = current_node
+        if current_node.key is not None and current_node.key != key:
+            if key < self.root.key:
+                current_node = self.root.left
+            elif key > self.root.key:
+                current_node = self.root.right
+        return current_node
+
+    def get_minimum_key(self):
+        """returns the node with the smallest key in BST"""
+        current_value = self.root
 
 
+    def get_maximum_key(self):
+        """returns the node with the largest key in the BST"""
+        pass
 
+    def inorder_traversal(self):
+        """inorder traversal of BST"""
+        pass
+
+    def preorder_traversal(self):
+        """postorder traversal of BST"""
+        pass
+
+    def remove(self, target_key):
+        """remove the node with the same key as the argument named target_key"""
+        pass
