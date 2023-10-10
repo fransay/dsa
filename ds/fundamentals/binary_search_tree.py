@@ -65,11 +65,17 @@ class BinarySearchTree(object):
 
     def get_minimum_key(self):
         """returns the node with the smallest key in BST"""
-        current_value = self.root
+        current_node = self.root
+        while current_node is not None:
+            current_node = current_node.left
+        return current_node.key
 
     def get_maximum_key(self):
         """returns the node with the largest key in the BST"""
-        pass
+        current_node = self.root
+        while current_node is not None:
+            current_node = current_node.right
+        return current_node.key
 
     def inorder_traversal(self):
         """inorder traversal of BST"""
