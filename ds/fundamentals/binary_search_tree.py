@@ -14,6 +14,7 @@
 
 
 """
+import setuptools
 
 
 class Node(object):
@@ -52,42 +53,40 @@ class BinarySearchTree(object):
 
     def insert(self, key):
         """insert node in BST"""
-        current_node = self.root
-        if current_node.key is None or current_node.key == key:
-            current_node = Node(key)
-            self.root = current_node
-        if current_node.key is not None and current_node.key != key:
-            if key < self.root.key:
-                current_node = self.root.left
-            elif key > self.root.key:
-                current_node = self.root.right
-        return current_node
 
-    def get_minimum_key(self):
-        """returns the node with the smallest key in BST"""
-        current_node = self.root
-        while current_node is not None:
-            current_node = current_node.left
-        return current_node.key
+        new_node = Node(key)  # node of key to be inserted
 
-    def get_maximum_key(self):
-        """returns the node with the largest key in the BST"""
-        current_node = self.root
-        while current_node is not None:
-            current_node = current_node.right
-        return current_node.key
+        if not self.root:  # if self.root is empty/None, then insert the new node there
+            self.root = new_node
+            return
 
-    def inorder_traversal(self):
+        current_node = self.root  # if root node is not empty
+        while current_node:
+            if key < current_node.key:
+                if current_node.key:
+                    current_node = current_node.left
+                else:
+                    current_node.left = new_node
+                    break
+            elif key > current_node:
+                if current_node:
+                    current_node = current_node.right
+                else:
+                    current_node.right = new_node
+                    break
+
+    def delete(self, target_key):
+        """delete node in BST"""
+        pass
+
+    def inorder(self):
         """inorder traversal of BST"""
         pass
 
-    def preorder_traversal(self):
+    def preorder(self):
         """preorder traversal of BST"""
         pass
 
-    def postorder_traversal(self):
+    def postorder(self):
         """postorder traversal of BST"""
-
-    def remove(self, target_key):
-        """remove the node with the same key as the argument named target_key in the binary search tree"""
         pass
