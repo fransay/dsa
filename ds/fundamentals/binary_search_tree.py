@@ -36,19 +36,19 @@ class BinarySearchTree(object):
 
     def __init__(self):
         """instantiate a new root node on object init"""
-        self.root = Node(None)
+        self.root = None
 
     def search(self, target_key):
         """search for target_key in BST"""
         current_node = self.root
-        while current_node.key != target_key and current_node.key is not None:
-            if current_node.key == target_key:
-                return current_node.key, True
-            elif current_node > target_key:
+        while current_node is not None:
+            if target_key == current_node.key:
+                return current_node
+            elif target_key < current_node.key:  # set current node to left node
                 current_node = current_node.left
             else:
-                current_node = current_node.right
-        return current_node, False
+                current_node = current_node.right  # set current node to right node
+        return None
 
     def insert(self, key):
         """insert node in BST"""
@@ -82,9 +82,12 @@ class BinarySearchTree(object):
         pass
 
     def preorder_traversal(self):
-        """postorder traversal of BST"""
+        """preorder traversal of BST"""
         pass
 
+    def postorder_traversal(self):
+        """postorder traversal of BST"""
+
     def remove(self, target_key):
-        """remove the node with the same key as the argument named target_key"""
+        """remove the node with the same key as the argument named target_key in the binary search tree"""
         pass
