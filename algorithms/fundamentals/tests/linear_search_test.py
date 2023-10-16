@@ -1,3 +1,7 @@
+# Author: Francis Osei Annin
+# Date: 01/10/23
+# Description: Linear Search Unit Tests
+
 import unittest
 import algorithms.fundamentals.search.linear_search as ls
 
