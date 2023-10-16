@@ -2,19 +2,8 @@
 # DATE: 17/02/23
 # DESCRIPTION: Sentinel Linear Search
 
-"""
-<Sentinel Linear Search Algorithm Explanation>
-- Given a collection data structure such as list,set, tuple,etc.
-- The last element in the search space(array)
--
--
--
--
-<Edge case>
 
-<Extra Info>
-
-"""
+# TODO: Refactor algorithm documentation
 
 """
 ALGORITHM EXPLAINED

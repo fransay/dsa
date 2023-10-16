@@ -38,8 +38,9 @@ def binary_search(array, target):
             low_index = mid_index + 1
     return False, None
 
+
 # uncomment lines 46-51 in case you wish to run this as a script
-# either than that, all unit tests relating to linear search can
+# either than that, all unit tests relating to binary search can
 # be found at algorithms/fundamentals/search/tests or a relative path
 # of ../test
 
