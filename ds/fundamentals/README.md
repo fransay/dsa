@@ -15,6 +15,6 @@ Below are an unordered list of some in built data structures in the python progr
 ### Linked Link
 * **Singly Linked List**
 * **Doubly Linked List**
-* **Circular LinkedList**
+* **Circular Linked List**
 
 ### Binary Search Tree
