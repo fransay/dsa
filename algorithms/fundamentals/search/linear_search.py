@@ -1,6 +1,6 @@
-# AUTHOR: Francis Osei Annin
-# DATE: 23/02/23
-# DESCRIPTION: Linear Search
+# Author: Francis Osei Annin
+# Date: 23/02/23
+# Description: Linear Search
 
 from math import isclose
 
