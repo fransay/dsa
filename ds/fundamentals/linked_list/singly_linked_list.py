@@ -64,12 +64,13 @@ class SinglyLinkedList(object):
                 current_node = current_node.pointer
         return current_node
 
-    def prepend(self, node:Node):
+    def prepend(self, node: Node):
         """add node to start of list"""
         new_node = node
         while self.head is not None:
-            new_node.poi
-
+            new_node.pointer = self.head
+            self.head = new_node
+        return
 
 
 def match(first_value, second_value):
