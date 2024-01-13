@@ -1,28 +1,30 @@
 # AUTHOR: Francis Osei Annin
 # DATE: 18/03/23
 # DESCRIPTION: Singly Linked List
+import math
+
 
 class Node(object):
     def __init__(self):
         """initialise Node with value and pointer"""
-        self._value = None
-        self._pointer = None
+        self.key = None
+        self.pointer = None
 
     def get_node_value(self):
         """return node value"""
-        return self._value
+        return self.key
 
     def get_node_pointer(self):
         """return node pointer"""
-        return self._pointer
+        return self.pointer
 
     def set_node_value(self, new_node_value):
         """set a new node value"""
-        self._value = new_node_value
+        self.key = new_node_value
 
     def set_node_pointer(self, new_node_pointer):
         """set new node pointer"""
-        self._pointer = new_node_pointer
+        self.pointer = new_node_pointer
 
 
 class SinglyLinkedList(object):
@@ -31,15 +33,47 @@ class SinglyLinkedList(object):
         """initialise linked list with a head node"""
         self.head = None
 
-    def insert(self, key):
-        """insert node into linked list"""
-        new_node = Node()
+    def find(self, node: Node):
+        """"search for a node in the list"""
+        current_node = self.head
+        while current_node != node.key:
+            current_node = node.pointer
+            if match(current_node, node.key):
+                break
+            return True
+        return False
 
-        if self.head is None:  # check if head is empty
-            self.head = new_node
-            self.head.set_node_value(key)
+    def remove(self, key):
+        """"remove node in the list"""
+        pass
 
-        # if self.head not empty, check pointer and see if that is not empty as well.
-        # if it is empty, create a new node and link
+    def traverse(self):
+        """"move through items in the list"""
+
+    def is_empty(self):
+        """check if list is empty or not"""
+        pass
+
+    def append(self, node: Node):
+        """add a new node to the end of list"""
+        current_node = self.head
+        while not current_node:
+            if current_node is None:
+                current_node = node
+            else:
+                current_node = current_node.pointer
+        return current_node
+
+    def prepend(self, node:Node):
+        """add node to start of list"""
+        new_node = node
+        while self.head is not None:
+            new_node.poi
 
 
+
+def match(first_value, second_value):
+    """"checks if two values in comparison match"""
+    if math.isclose(first_value, second_value):
+        return True
+    return False
