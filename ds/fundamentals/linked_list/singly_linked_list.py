@@ -5,9 +5,9 @@ import math
 
 
 class Node(object):
-    def __init__(self):
+    def __init__(self, key):
         """initialise Node with value and pointer"""
-        self.key = None
+        self.key = key
         self.pointer = None
 
     def get_node_value(self):
@@ -43,16 +43,20 @@ class SinglyLinkedList(object):
             return True
         return False
 
-    def remove(self, key):
-        """"remove node in the list"""
-        pass
-
     def traverse(self):
-        """"move through items in the list"""
+        """"move through items in the list and display them in an inbuilt list"""
+        disp_list = []
+        current_node: Node = self.head
+        while current_node is not None:
+            disp_list.append(current_node.key)
+            current_node = current_node.pointer
+        return disp_list
 
     def is_empty(self):
         """check if list is empty or not"""
-        pass
+        if self.head is None:
+            return True
+        return False
 
     def append(self, node: Node):
         """add a new node to the end of list"""
@@ -72,9 +76,18 @@ class SinglyLinkedList(object):
             self.head = new_node
         return
 
+    def remove(self, key):
+        """"remove node in the list"""
+        pass
+
 
 def match(first_value, second_value):
     """"checks if two values in comparison match"""
     if math.isclose(first_value, second_value):
         return True
     return False
+
+
+def key_2_node(key):
+    """returns node object of key"""
+    return Node(key)
