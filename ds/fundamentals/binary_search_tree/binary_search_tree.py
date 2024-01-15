@@ -2,7 +2,6 @@
 # Date: 5/06/23
 # Description: Binary search tree is not attributed to a single inventor,
 # John Mauchly, Grace Hooper and Donald Knuth are key contributors.
-# References: GPT 3.5
 
 """
 <Binary Search Tree Explanation>
