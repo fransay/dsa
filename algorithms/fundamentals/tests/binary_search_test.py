@@ -1,19 +1,20 @@
-# Author: Francis Osei Annin
-# Date: 01/10/23
-# Description: Binary Search Unit Tests
-
 import unittest
-import algorithms.fundamentals.search.binary_search as bs
+from ..search.binary_search import BinarySearch
 
 
-class BinarySearchTest(unittest.TestCase):
-    """run all binary search test cases here"""
-    def test_binary_search(self):
-        """binary search unitest"""
-        program_output_one = bs.binary_search([1, 2, 3, 4, 5, 7], 7)
-        expected_output_one = (True, 5)
-        self.assertEqual(program_output_one, expected_output_one)
+class TestBinarySearch(unittest.TestCase):
+    """Test Binary Search"""
 
-        program_output_two = bs.binary_search([7, 8, 9, 10, 11, 12], 100.00)
-        expected_output_two = (False, None)
-        self.assertEqual(program_output_two, expected_output_two)
+    def test_find(self):
+        """test find method"""
+        test_array = [1, 2, 3, 4]
+        bin_search = BinarySearch(test_array)
+
+        result1 = bin_search.find(3)  # expect true
+        expected1 = True
+
+        result2 = bin_search.find(22)  # expect false
+        expected2 = False
+
+        self.assertEqual(result1, expected1)
+        self.assertEqual(result2, expected2)
