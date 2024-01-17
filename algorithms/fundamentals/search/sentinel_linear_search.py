@@ -16,4 +16,5 @@ class SentinelLinearSearch(object):
         self.array[n - 1] = last_element
         if counter <= n - 1 or counter == target_value:
             return True
-        return False
+        else:
+            return False
