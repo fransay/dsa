@@ -1,8 +1,8 @@
-# AUTHOR: Francis Osei Annin
-# DATE: 18/04/23
-# DESCRIPTION:
-# HISTORY: Invented by Tony Hoare in 1959
 
-"""
-ALGORITHM EXPLAINED
-"""
+
+class QuickSort(object):
+    def __init__(self, array):
+        self.array = array
+
+    def sort(self, start):
+        pass
