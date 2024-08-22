@@ -18,14 +18,14 @@ class Stack(object):
         if not self.is_empty():
             return self.elements.pop()
         else:
-            return "Can't perform pop, stack is empty"
+            return Exception("Can't pop from empty stack")
 
     def peek(self):
         """return the first element on stack"""
         if not self.is_empty():
             return self.elements[-1]
         else:
-            return "Stack is Empty"
+            return Exception("Can't peek on empty stack")
 
     def size(self):
         """return the size of the stack"""
@@ -34,3 +34,12 @@ class Stack(object):
     def is_empty(self):
         """return boolean if size is empty or not"""
         return self.elements == 0
+
+    def sweet_pop(self):
+        """reduce the top element of the stack"""
+        if not self.is_empty():
+            del self.elements[-1]
+        else:
+            return Exception("Underflow Error, can't peek on empty stack")
+
+

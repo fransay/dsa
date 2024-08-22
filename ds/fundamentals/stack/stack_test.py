@@ -8,7 +8,7 @@ from ds.fundamentals.stack.stack import Stack
 
 class TestStack(unittest.TestCase):
     """test stack data structure"""
-
+    # todo: properly test pop and sweet_pop methods
     def test_is_empty(self):
         """test if stack is empty or not"""
         _stack = Stack()
@@ -33,8 +33,15 @@ class TestStack(unittest.TestCase):
         observed_pop_number = _stack.pop()
         expected_pop_number = 3000
 
+        # size
+        observed_size = _stack.size()
+        expected_size = 3
+
+        # sweet pop
+        observed_sweet_pop = _stack.sweet_pop()
+        expected_sweet_pop = 3000  # sweet_pop() returns None
+
         self.assertAlmostEqual(observed_peek_number, expected_peek_number)
-        self.assertAlmostEqual(observed_pop_number, expected_pop_number)
-
-
-
+        self.assertEquals(observed_pop_number, None)
+        self.assertAlmostEqual(observed_size, expected_size)
+        self.assertEquals(observed_sweet_pop, None)

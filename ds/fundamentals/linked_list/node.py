@@ -1,22 +1,26 @@
-
 class Node(object):
     def __init__(self, key):
-        """initialise Node with value and pointer"""
+        """initialise node with value and pointers"""
         self.key = key
-        self.pointer = None
+        self._left_pointer = None
+        self._right_pointer = None
 
-    def get_node_value(self):
+    def get_key(self):
         """return node value"""
         return self.key
 
-    def get_node_pointer(self):
-        """return node pointer"""
-        return self.pointer
+    def get_left_pointer(self):
+        """return left pointer"""
+        return self._left_pointer
 
-    def set_node_value(self, new_node_value):
-        """set a new node value"""
-        self.key = new_node_value
+    def get_right_pointer(self):
+        """return right pointer"""
+        return self._right_pointer
 
-    def set_node_pointer(self, new_node_pointer):
-        """set new node pointer"""
-        self.pointer = new_node_pointer
+    def set_left_pointer(self, new_left_pointer):
+        """set new left pointer"""
+        self._left_pointer = new_left_pointer
+
+    def set__right_pointer(self, new_right_pointer):
+        """set new right pointer"""
+        self._right_pointer = new_right_pointer
