@@ -41,5 +41,3 @@ class Stack(object):
             del self.elements[-1]
         else:
             return Exception("Underflow Error, can't peek on empty stack")
-
-
