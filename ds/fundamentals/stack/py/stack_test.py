@@ -3,7 +3,7 @@
 # Description: A test stack data structure
 
 import unittest
-from ds.fundamentals.stack.stack import Stack
+from ds.fundamentals.stack.py.stack import Stack
 
 
 class TestStack(unittest.TestCase):

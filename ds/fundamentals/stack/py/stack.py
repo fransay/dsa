@@ -1,6 +1,6 @@
 # Author: Francis Osei Annin
 # Date: 14/04/23
-# Description: A stack data structure
+# Description: A stack data structure, implement with an array
 
 class Stack(object):
     """A stack is a data structure, that follows the last in, first out principle."""
