@@ -10,10 +10,10 @@ func TestStack(t *testing.T) {
 	stack.Push("deux")
 
 	// pop
-	stack.Pop() //
+	stack.Pop()
 
 	// peek
-	observedPeek := stack.Peek() //
+	observedPeek := stack.Peek()
 	expectedPeek := "five"
 	if observedPeek != expectedPeek {
 		t.Errorf("Expected %v, Got %v", expectedPeek, observedPeek)

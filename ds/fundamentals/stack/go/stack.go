@@ -31,6 +31,25 @@ func (p *Stack) IsEmpty() bool {
 }
 
 // Size returns the number of element in a stack
-func (p *Stack) Size() any {
+func (p *Stack) Size() int {
 	return len(p.container)
+}
+
+// IsEqual does a comparison between this.stack and other.stack
+func (p *Stack) IsEqual(stack Stack) bool {
+	indexTrack := 0
+	for {
+		if p.container[indexTrack] != stack.container[indexTrack] {
+			return false
+		}
+		if indexTrack >= len(p.container) {
+			break
+		}
+
+		if len(p.container) != len(stack.container) {
+			return false
+		}
+	}
+	return true
+
 }
